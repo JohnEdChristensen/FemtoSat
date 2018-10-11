@@ -1606,126 +1606,6 @@ Adapted from SparkFun Libraries</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="jumper" urn="urn:adsk.eagle:library:252">
-<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SJ_2W" urn="urn:adsk.eagle:footprint:15438/1" library_version="1">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="3.175" y1="-1.524" x2="-3.175" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.524" x2="3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.429" y1="1.27" x2="-3.175" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.429" y1="-1.27" x2="-3.175" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.175" y1="-1.524" x2="3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.429" y1="-1.27" x2="3.429" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.524" x2="3.175" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="-2.794" y1="0" x2="-3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
-<wire x1="0" y1="-1.397" x2="0" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="2.032" y1="0.127" x2="2.032" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="3" x="2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
-</package>
-<package name="SJ_2" urn="urn:adsk.eagle:footprint:15439/1" library_version="1">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
-<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SJ_2W" urn="urn:adsk.eagle:package:15476/1" type="box" library_version="1">
-<description>Solder jumper</description>
-<packageinstances>
-<packageinstance name="SJ_2W"/>
-</packageinstances>
-</package3d>
-<package3d name="SJ_2" urn="urn:adsk.eagle:package:15474/1" type="box" library_version="1">
-<description>Solder jumper</description>
-<packageinstances>
-<packageinstance name="SJ_2"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SJ_2" urn="urn:adsk.eagle:symbol:15437/1" library_version="1">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SJ2W" urn="urn:adsk.eagle:component:15505/1" prefix="SJ" uservalue="yes" library_version="1">
-<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="SJ_2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="W" package="SJ_2W">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15476/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="SJ_2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15474/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1766,16 +1646,13 @@ Adapted from SparkFun Libraries</description>
 <part name="P+5" library="femtosat" deviceset="3.3V" device=""/>
 <part name="GND6" library="femtosat" deviceset="GND" device=""/>
 <part name="GND7" library="femtosat" deviceset="GND" device=""/>
-<part name="R5" library="femtosat" deviceset="RESISTOR_10KOHM" device="0603" value="10K"/>
-<part name="R6" library="femtosat" deviceset="RESISTOR_10KOHM" device="0603" value="10K"/>
-<part name="R7" library="femtosat" deviceset="RESISTOR_10KOHM" device="0603" value="10K"/>
-<part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ2W" device="" package3d_urn="urn:adsk.eagle:package:15474/1"/>
 <part name="GND8" library="femtosat" deviceset="GND" device=""/>
-<part name="P+6" library="femtosat" deviceset="3.3V" device=""/>
 <part name="U4" library="femtosat" deviceset="VOLTAGE_REGULATOR_MIC5205" device="3.3V" value="3.3V/150mA"/>
 <part name="P+7" library="femtosat" deviceset="3.3V" device=""/>
 <part name="P+8" library="femtosat" deviceset="3.3V" device=""/>
 <part name="GND9" library="femtosat" deviceset="GND" device=""/>
+<part name="P+9" library="femtosat" deviceset="3.3V" device=""/>
+<part name="GND10" library="femtosat" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1813,16 +1690,13 @@ Adapted from SparkFun Libraries</description>
 <instance part="P+5" gate="G$1" x="160.02" y="193.04"/>
 <instance part="GND6" gate="1" x="160.02" y="175.26"/>
 <instance part="GND7" gate="1" x="180.34" y="162.56"/>
-<instance part="R5" gate="G$1" x="231.14" y="195.58" rot="R90"/>
-<instance part="R6" gate="G$1" x="241.3" y="195.58" rot="R90"/>
-<instance part="R7" gate="G$1" x="254" y="195.58" rot="R90"/>
-<instance part="SJ1" gate="G$1" x="236.22" y="170.18"/>
-<instance part="GND8" gate="1" x="236.22" y="157.48"/>
-<instance part="P+6" gate="G$1" x="223.52" y="205.74" rot="R90"/>
+<instance part="GND8" gate="1" x="228.6" y="167.64"/>
 <instance part="U4" gate="U1" x="63.5" y="195.58"/>
 <instance part="P+7" gate="G$1" x="53.34" y="195.58" rot="R90"/>
 <instance part="P+8" gate="G$1" x="71.12" y="200.66" rot="R270"/>
 <instance part="GND9" gate="1" x="53.34" y="180.34"/>
+<instance part="P+9" gate="G$1" x="180.34" y="187.96" rot="R90"/>
+<instance part="GND10" gate="1" x="215.9" y="198.12" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1911,21 +1785,41 @@ Adapted from SparkFun Libraries</description>
 <wire x1="182.88" y1="177.8" x2="182.88" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="170.18" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="167.64" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="167.64" x2="177.8" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="177.8" y1="167.64" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="167.64" x2="182.88" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="165.1" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
 <junction x="180.34" y="167.64"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="SJ1" gate="G$1" pin="3"/>
-<wire x1="236.22" y1="160.02" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="FSYNC"/>
+<wire x1="185.42" y1="182.88" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="182.88" x2="177.8" y2="167.64" width="0.1524" layer="91"/>
+<junction x="177.8" y="167.64"/>
 </segment>
 <segment>
 <pinref part="U4" gate="U1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="53.34" y1="190.5" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="AUX_CL"/>
+<wire x1="220.98" y1="190.5" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
+<label x="220.98" y="190.5" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="AUX_DA"/>
+<label x="220.98" y="187.96" size="1.778" layer="95"/>
+<wire x1="220.98" y1="187.96" x2="226.06" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="187.96" x2="226.06" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="198.12" x2="223.52" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="198.12" x2="223.52" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="190.5" x2="223.52" y2="198.12" width="0.1524" layer="91"/>
+<junction x="223.52" y="198.12"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="AD0/SDO"/>
+<wire x1="220.98" y1="177.8" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="170.18" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -2001,27 +1895,18 @@ Adapted from SparkFun Libraries</description>
 <wire x1="40.64" y1="60.96" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="254" y1="200.66" x2="254" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="254" y1="205.74" x2="241.3" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="205.74" x2="231.14" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="205.74" x2="223.52" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="200.66" x2="231.14" y2="205.74" width="0.1524" layer="91"/>
-<junction x="231.14" y="205.74"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="200.66" x2="241.3" y2="205.74" width="0.1524" layer="91"/>
-<junction x="241.3" y="205.74"/>
-<label x="223.52" y="205.74" size="1.778" layer="95"/>
-<pinref part="P+6" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="U4" gate="U1" pin="EN"/>
 <pinref part="P+7" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="U4" gate="U1" pin="OUT"/>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VDDIO"/>
+<wire x1="185.42" y1="187.96" x2="180.34" y2="187.96" width="0.1524" layer="91"/>
+<label x="177.8" y="187.96" size="1.778" layer="95"/>
+<pinref part="P+9" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="SPI_SCK" class="0">
@@ -2107,11 +1992,7 @@ Adapted from SparkFun Libraries</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="SDA/SDI"/>
-<wire x1="220.98" y1="180.34" x2="231.14" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="180.34" x2="231.14" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="180.34" x2="256.54" y2="180.34" width="0.1524" layer="91"/>
-<junction x="231.14" y="180.34"/>
+<wire x1="220.98" y1="180.34" x2="256.54" y2="180.34" width="0.1524" layer="91"/>
 <label x="256.54" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -2131,11 +2012,7 @@ Adapted from SparkFun Libraries</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="SCL/SCLK"/>
-<wire x1="220.98" y1="182.88" x2="241.3" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="182.88" x2="241.3" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="182.88" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
-<junction x="241.3" y="182.88"/>
+<wire x1="220.98" y1="182.88" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
 <label x="256.54" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -2162,75 +2039,13 @@ Adapted from SparkFun Libraries</description>
 <wire x1="53.34" y1="200.66" x2="38.1" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDDIO" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="VDDIO"/>
-<wire x1="185.42" y1="187.96" x2="180.34" y2="187.96" width="0.1524" layer="91"/>
-<label x="177.8" y="187.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="INT" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="INT"/>
-<wire x1="185.42" y1="185.42" x2="180.34" y2="185.42" width="0.1524" layer="91"/>
-<label x="180.34" y="185.42" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FSYNC" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="FSYNC"/>
-<wire x1="185.42" y1="182.88" x2="180.34" y2="182.88" width="0.1524" layer="91"/>
 <label x="177.8" y="182.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
 <pinref part="U3" gate="G$1" pin="REGOUT"/>
 <wire x1="185.42" y1="180.34" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="180.34" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="CS" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="!CS"/>
-<wire x1="220.98" y1="185.42" x2="254" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="254" y1="190.5" x2="254" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="254" y1="185.42" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
-<junction x="254" y="185.42"/>
-<label x="256.54" y="185.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="AD0/SDO"/>
-<wire x1="220.98" y1="177.8" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="170.18" x2="228.6" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="170.18" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AUX_CL" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="AUX_CL"/>
-<wire x1="220.98" y1="190.5" x2="223.52" y2="190.5" width="0.1524" layer="91"/>
-<label x="220.98" y="190.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AUX_DA" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="AUX_DA"/>
-<wire x1="220.98" y1="187.96" x2="223.52" y2="187.96" width="0.1524" layer="91"/>
-<label x="220.98" y="187.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AD0/ASO" class="0">
-<segment>
-<pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="175.26" x2="236.22" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="177.8" x2="243.84" y2="177.8" width="0.1524" layer="91"/>
-<label x="243.84" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -2238,21 +2053,4 @@ Adapted from SparkFun Libraries</description>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
