@@ -6,9 +6,23 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1604,6 +1618,27 @@ Adapted from SparkFun Libraries</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CAPACITOR_1.0UF" prefix="C">
+<description>&lt;h3&gt;1µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-16V-10%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="399-3118-1-ND " constant="no"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1638,7 +1673,6 @@ Adapted from SparkFun Libraries</description>
 <part name="ANT1" library="femtosat" deviceset="ANTENNA_PAD" device=""/>
 <part name="P+4" library="femtosat" deviceset="3.3V" device=""/>
 <part name="B1" library="femtosat" deviceset="BATTERY_FOOTPRINT" device="" value="110mAh"/>
-<part name="J2" library="femtosat" deviceset="CONNECTOR_2PIN" device=""/>
 <part name="GND5" library="femtosat" deviceset="GND" device=""/>
 <part name="U3" library="femtosat" deviceset="MPU9250" device="" value="9DoF IMU"/>
 <part name="C1" library="femtosat" deviceset="CAPACITOR_0.1UF" device="" value="0.1uF"/>
@@ -1653,6 +1687,9 @@ Adapted from SparkFun Libraries</description>
 <part name="GND9" library="femtosat" deviceset="GND" device=""/>
 <part name="P+9" library="femtosat" deviceset="3.3V" device=""/>
 <part name="GND10" library="femtosat" deviceset="GND" device=""/>
+<part name="C4" library="femtosat" deviceset="CAPACITOR_0.1UF" device="" value="0.1uF"/>
+<part name="C5" library="femtosat" deviceset="CAPACITOR_1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="J3" library="femtosat" deviceset="CONNECTOR_2PIN" device="-JST-2MM-SMT"/>
 </parts>
 <sheets>
 <sheet>
@@ -1682,8 +1719,7 @@ Adapted from SparkFun Libraries</description>
 <instance part="ANT1" gate="G$1" x="83.82" y="38.1" rot="R90"/>
 <instance part="P+4" gate="G$1" x="40.64" y="60.96"/>
 <instance part="B1" gate="B1" x="20.32" y="200.66"/>
-<instance part="J2" gate="G$1" x="30.48" y="198.12"/>
-<instance part="GND5" gate="1" x="43.18" y="190.5"/>
+<instance part="GND5" gate="1" x="43.18" y="203.2"/>
 <instance part="U3" gate="G$1" x="203.2" y="182.88"/>
 <instance part="C1" gate="G$1" x="160.02" y="182.88"/>
 <instance part="C3" gate="G$1" x="172.72" y="172.72"/>
@@ -1693,10 +1729,13 @@ Adapted from SparkFun Libraries</description>
 <instance part="GND8" gate="1" x="228.6" y="167.64"/>
 <instance part="U4" gate="U1" x="63.5" y="195.58"/>
 <instance part="P+7" gate="G$1" x="53.34" y="195.58" rot="R90"/>
-<instance part="P+8" gate="G$1" x="71.12" y="200.66" rot="R270"/>
+<instance part="P+8" gate="G$1" x="86.36" y="200.66" rot="R270"/>
 <instance part="GND9" gate="1" x="53.34" y="180.34"/>
 <instance part="P+9" gate="G$1" x="180.34" y="187.96" rot="R90"/>
 <instance part="GND10" gate="1" x="215.9" y="198.12" rot="R270"/>
+<instance part="C4" gate="G$1" x="78.74" y="195.58"/>
+<instance part="C5" gate="G$1" x="86.36" y="195.58"/>
+<instance part="J3" gate="G$1" x="30.48" y="198.12"/>
 </instances>
 <busses>
 </busses>
@@ -1769,10 +1808,10 @@ Adapted from SparkFun Libraries</description>
 <junction x="73.66" y="27.94"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="198.12" x2="43.18" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="198.12" x2="43.18" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="205.74" x2="43.18" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="200.66" x2="38.1" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -1799,7 +1838,16 @@ Adapted from SparkFun Libraries</description>
 <segment>
 <pinref part="U4" gate="U1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="53.34" y1="190.5" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="190.5" x2="53.34" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="185.42" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="193.04" x2="81.28" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="193.04" x2="86.36" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="193.04" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="185.42" x2="53.34" y2="185.42" width="0.1524" layer="91"/>
+<junction x="81.28" y="193.04"/>
+<junction x="53.34" y="185.42"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="AUX_CL"/>
@@ -1901,6 +1949,12 @@ Adapted from SparkFun Libraries</description>
 <segment>
 <pinref part="U4" gate="U1" pin="OUT"/>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
+<wire x1="86.36" y1="200.66" x2="78.74" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="200.66" x2="71.12" y2="200.66" width="0.1524" layer="91"/>
+<junction x="78.74" y="200.66"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<junction x="86.36" y="200.66"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VDDIO"/>
@@ -2031,14 +2085,6 @@ Adapted from SparkFun Libraries</description>
 <wire x1="83.82" y1="30.48" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBAT" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<label x="38.1" y="200.66" size="1.778" layer="95"/>
-<pinref part="U4" gate="U1" pin="IN"/>
-<wire x1="53.34" y1="200.66" x2="38.1" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FSYNC" class="0">
 <segment>
 <label x="177.8" y="182.88" size="1.778" layer="95"/>
@@ -2046,6 +2092,15 @@ Adapted from SparkFun Libraries</description>
 <wire x1="185.42" y1="180.34" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="180.34" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U4" gate="U1" pin="IN"/>
+<wire x1="53.34" y1="200.66" x2="40.64" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="200.66" x2="40.64" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="198.12" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
